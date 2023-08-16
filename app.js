@@ -16,7 +16,7 @@ const allowedOrigins = ['http://localhost:3000', 'https://mern-budget-management
 
 // Check if the environment is production, and then allow the deployed frontend URL
 if (process.env.NODE_ENV === 'production') {
-    allowedOrigins.push('https://mern-budget-management.onrender.com'); 
+    allowedOrigins.push('https://mern-budget-management-final-project.onrender.com'); 
 }
 
 app.use(cors({
