@@ -12,7 +12,9 @@ const PORT = process.env.PORT || 5000;
 
 // middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: ['http://localhost:3000', 'https://mern-budget-management-final-project.onrender.com'], 
+}));
 
 // routes
 readdirSync('./routes').map((r) => app.use('/api/v1', require(`./routes/${r}`)));
