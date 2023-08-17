@@ -11,8 +11,6 @@ const PORT = process.env.PORT || 5000;
 // middleware
 app.use(express.json());
 
-app.use('/', express.static('/build'))
-
 // Configure CORS to allow requests from specified origins
 const allowedOrigins = [
     'http://localhost:3000', // For local development
