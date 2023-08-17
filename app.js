@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 
 // Configure CORS to allow requests from specified origins
-const allowedOrigins = ['http://localhost:3000', 'https://mern-budget-management-final-project.onrender.com'];
+const allowedOrigins = 'https://mern-budget-management-final-project.onrender.com';
 
 // Check if the environment is production, and then allow the deployed frontend URL
 if (process.env.NODE_ENV === 'production') {
